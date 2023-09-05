@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?0da44af927042eae7650929f1be61b61") format("truetype"),
+url("./flaticon.woff?0da44af927042eae7650929f1be61b61") format("woff"),
+url("./flaticon.woff2?0da44af927042eae7650929f1be61b61") format("woff2"),
+url("./flaticon.eot?0da44af927042eae7650929f1be61b61#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0da44af927042eae7650929f1be61b61#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "maintenance": "\f101",
+    "valet": "\f102",
+    "speedometer": "\f103",
+    "customer-support": "\f104",
+    "cooling": "\f105",
+    "battery": "\f106",
+    "electric-car": "\f107",
+);
+
+.flaticon-maintenance:before {
+    content: map-get($flaticon-map, "maintenance");
+}
+.flaticon-valet:before {
+    content: map-get($flaticon-map, "valet");
+}
+.flaticon-speedometer:before {
+    content: map-get($flaticon-map, "speedometer");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon-map, "customer-support");
+}
+.flaticon-cooling:before {
+    content: map-get($flaticon-map, "cooling");
+}
+.flaticon-battery:before {
+    content: map-get($flaticon-map, "battery");
+}
+.flaticon-electric-car:before {
+    content: map-get($flaticon-map, "electric-car");
+}

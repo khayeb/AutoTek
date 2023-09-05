@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+		margin: 0px;
+    }
+	
+    .bg-dark {
+		background-color: #1c63b8!important;
+	}
+	
+    .navbar-brand {
+		font-size: 20px;
+		font-family: sans-serif;
+    }
+	
+	.dropdown {
+		text-align: right;
+		
+	}
+	
+	#user {
+		color: #1c63b8;
+	}
+	
+	@font-face {
+		font-family: "Mad Mecha Italic";
+		src: url('https://www.dafont.com/mad-mecha.font');
+	}
+	
+	#dropdownMenuButton {
+		color: white;
+	}
+	
+	#page {
+		color: white;
+	}
+	
+	#page:hover {
+		color: lightgray;
+	}
+	
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+		<a href="/" class="navbar-brand" style="color: orange; font-style: italic; font-weight: bold;">AutoTek</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+			<a href="/" class="nav-item nav-link active" id="page">Home</a>
+			        
+			<a href="/aboutus" class="nav-item nav-link" id="page">About Us</a>
+			<a href="contactus" class="nav-item nav-link" id="page">Contact Us</a>        
+		</div>
+	  
+		<div class="dropdown">
+			<button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login
+			</button>      
+			
+			<div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+				<a href="/customerlogin" class="nav-item nav-link" id="user">Customer</a>
+				<a href="/mechaniclogin" class="nav-item nav-link" id="user">Mechanics</a>
+				<a href="/adminlogin" class="nav-item nav-link" id="user">Admin</a>
+			</div>
+		</div>
+	</div>
+    </nav>
+</div>
+
+
+</body>
+
+</html>
